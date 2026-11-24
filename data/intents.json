@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "domain": "Catur untuk pemula",
+    "versi": "draf-1",
+    "catatan": "Draf awal Minggu 1. Tambah dan tulis ulang contoh kalimat dengan gayamu sendiri (baku, singkat, gaul, typo)."
+  },
+  "intents": [
+    {
+      "tag": "sapaan",
+      "label": "sapaan",
+      "patterns": ["halo", "hai coach", "halo coach", "hi", "selamat pagi", "selamat siang", "permisi", "p", "assalamualaikum"],
+      "responses": ["Halo! Aku Pelatih Pemula Catur. Tanyakan soal aturan, gerakan bidak, pembukaan, taktik, endgame, atau cara berlatih ya."]
+    },
+    {
+      "tag": "pamit",
+      "label": "pamit",
+      "patterns": ["makasih", "terima kasih", "thanks", "sampai nanti", "dadah", "bye", "oke makasih coach", "udah cukup makasih"],
+      "responses": ["Sama-sama! Semangat latihannya, sampai jumpa di papan catur."]
+    },
+    {
+      "tag": "aturan_dasar",
+      "label": "aturan dasar",
+      "patterns": ["gimana cara main catur", "cara bermain catur", "aturan dasar catur", "aku mau belajar catur dari nol", "catur itu gimana sih mainnya", "peraturan catur apa aja", "cara menyusun bidak di papan", "tujuan permainan catur apa"],
+      "responses": ["Catur dimainkan dua pemain di papan 8x8, putih jalan lebih dulu dan keduanya bergantian satu langkah. Tiap pemain punya 16 bidak: 8 pion, 2 benteng, 2 kuda, 2 gajah, 1 menteri, 1 raja. Tujuannya men-skakmat raja lawan, yaitu raja terancam dan tidak punya cara lolos. Papan dipasang dengan kotak putih di pojok kanan bawah tiap pemain."]
+    },
+    {
+      "tag": "gerakan_bidak",
+      "label": "gerakan bidak",
+      "patterns": ["kuda jalannya gimana", "cara jalan bidak", "gajah geraknya gimana", "benteng bisa jalan ke mana", "menteri bisa jalan kemana aja", "pion jalannya gimana", "knight move gmn", "gerakan raja gimana", "bidak apa aja yang bisa lompat"],
+      "responses": ["Gerakan bidak: raja satu kotak ke segala arah; menteri lurus atau diagonal sejauh apa pun; benteng lurus (horizontal/vertikal); gajah diagonal; kuda berbentuk huruf L (dua kotak lurus lalu satu ke samping) dan satu-satunya yang bisa melompati bidak lain; pion maju satu kotak (dua kotak di langkah pertamanya) dan menangkap secara diagonal."]
+    },
+    {
+      "tag": "gerakan_khusus",
+      "label": "gerakan khusus",
+      "patterns": ["apa itu rokade", "apa itu en passant", "promosi pion itu apa", "kapan boleh rokade", "pion bisa jadi menteri", "aturan khusus catur", "castling itu apa", "en passant gimana"],
+      "responses": ["Ada tiga gerakan khusus. Rokade: raja bergeser dua kotak ke arah benteng dan benteng melompat ke sisi raja; syaratnya raja dan benteng belum pernah bergerak, tidak ada bidak di antara, dan raja tidak sedang skak atau melewati kotak yang diserang. En passant: pion yang baru maju dua kotak bisa ditangkap pion lawan di sampingnya, seolah ia hanya maju satu kotak, hanya pada langkah berikutnya. Promosi: pion yang mencapai baris terakhir berubah menjadi menteri, benteng, gajah, atau kuda."]
+    },
+    {
+      "tag": "pembukaan",
+      "label": "pembukaan",
+      "patterns": ["pembukaan yang bagus buat pemula apa", "opening apa yang mudah", "langkah awal catur gimana", "apa itu italian game", "pembukaan terbaik", "mulai main pake langkah apa", "opening buat pemula", "apa itu london system"],
+      "responses": ["Prinsip pembukaan untuk pemula: kuasai pusat papan (pion e4/d4), keluarkan kuda dan gajah lebih dulu, lakukan rokade lebih awal, hindari mengeluarkan menteri terlalu cepat, dan jangan menggerakkan bidak yang sama berulang kali. Contoh pembukaan sederhana: Italian Game (1.e4 e5 2.Nf3 Nc6 3.Bc4) dan London System (1.d4 lalu Bf4)."]
+    },
+    {
+      "tag": "taktik",
+      "label": "taktik",
+      "patterns": ["apa itu fork dan pin", "apa itu taktik catur", "cara menjebak bidak lawan", "skewer itu apa", "apa itu garpu di catur", "trik biar menang bidak", "apa itu discovered attack", "taktik dasar apa saja"],
+      "responses": ["Taktik dasar: fork (garpu) adalah satu bidak menyerang dua bidak lawan sekaligus, sering dilakukan kuda. Pin adalah menahan bidak lawan karena jika bergerak, bidak yang lebih berharga di belakangnya terancam. Skewer mirip pin tetapi bidak yang berharga berada di depan. Discovered attack membuka serangan dengan memindahkan bidak yang menghalangi. Biasakan memeriksa tiap langkah: apakah ada bidak yang menggantung atau bisa diserang ganda."]
+    },
+    {
+      "tag": "endgame",
+      "label": "endgame",
+      "patterns": ["cara skakmat pakai raja dan benteng", "apa itu endgame", "akhir permainan catur gimana", "skakmat dengan menteri dan raja", "kapan seri di catur", "apa itu stalemate", "teknik endgame dasar", "raja ikut menyerang kapan"],
+      "responses": ["Pada endgame, raja justru dibawa aktif ke tengah karena ancaman sudah berkurang. Skakmat dengan raja dan benteng: dorong raja lawan ke tepi dengan benteng dan raja bergantian, lalu skak di tepi papan. Hati-hati dengan stalemate, yaitu pemain yang sedang jalan tidak punya langkah sah padahal rajanya tidak diskak, hasilnya seri. Pelajari juga posisi dasar raja dan pion melawan raja."]
+    },
+    {
+      "tag": "notasi",
+      "label": "notasi",
+      "patterns": ["arti Nf3 itu apa", "cara baca notasi catur", "apa itu notasi aljabar", "e4 artinya apa", "tanda x di catur itu apa", "o-o artinya apa", "cara mencatat langkah catur", "huruf K Q R B N itu apa"],
+      "responses": ["Notasi aljabar: kolom diberi huruf a–h dan baris angka 1–8, sehingga tiap kotak punya nama (misal e4). Huruf bidak: K raja, Q menteri, R benteng, B gajah, N kuda; pion tanpa huruf. Jadi Nf3 berarti kuda pindah ke f3 dan e4 berarti pion ke e4. Tanda x berarti menangkap, + berarti skak, # berarti skakmat, dan O-O adalah rokade sisi raja (O-O-O sisi menteri)."]
+    },
+    {
+      "tag": "nilai_bidak",
+      "label": "nilai bidak dan rating",
+      "patterns": ["nilai poin tiap bidak berapa", "berapa nilai menteri", "apa itu elo", "rating catur itu apa", "kuda lebih berharga atau gajah", "tukar bidak untung kapan", "pion nilainya berapa", "apa itu rating fide"],
+      "responses": ["Nilai kasar bidak: pion 1, kuda 3, gajah 3, benteng 5, menteri 9; raja tidak dinilai karena tidak boleh hilang. Nilai ini membantu memutuskan apakah pertukaran menguntungkan, tetapi posisi tetap berpengaruh. Elo adalah sistem rating kekuatan pemain: menang melawan lawan lebih kuat menaikkan rating lebih banyak."]
+    },
+    {
+      "tag": "kesalahan_pemula",
+      "label": "kesalahan pemula",
+      "patterns": ["kenapa aku sering kalah cepat", "kesalahan pemula apa aja", "kok bidakku sering dimakan", "kenapa selalu kalah", "aku sering blunder", "biar nggak gampang kalah gimana", "apa yang salah dengan permainanku", "kenapa kalah terus"],
+      "responses": ["Kesalahan yang paling sering: membiarkan bidak menggantung (tidak terlindungi), mengeluarkan menteri terlalu cepat, tidak melakukan rokade, mengabaikan ancaman lawan sebelum menyerang, dan menghafal pembukaan tanpa memahami idenya. Kebiasaan yang membantu: sebelum melangkah, tanyakan apa yang diancam lawan setelah langkahmu."]
+    },
+    {
+      "tag": "cara_latihan",
+      "label": "cara latihan",
+      "patterns": ["cara cepat jago catur gimana", "gimana cara latihan catur", "tips biar jago catur", "latihan catur tiap hari", "belajar catur dari mana", "rekomendasi cara belajar catur", "cara meningkatkan rating", "puzzle catur itu apa"],
+      "responses": ["Rutinitas latihan untuk pemula: selesaikan puzzle taktik setiap hari, mainkan partai dengan durasi lebih panjang (misalnya rapid 10 menit atau lebih) agar sempat berpikir, tinjau ulang partai yang kalah untuk mencari kesalahan, dan pelajari endgame dasar. Konsisten sedikit tiap hari lebih efektif daripada latihan lama sekali-sekali."]
+    }
+  ]
+}
