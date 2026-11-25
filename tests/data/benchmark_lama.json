@@ -1,0 +1,186 @@
+[
+ {
+  "input": "kuda bisa loncat gak",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "gajah itu jalannya diagonal ya",
+  "expected": "gerakan_gajah"
+ },
+ {
+  "input": "benteng boleh jalan miring?",
+  "expected": "gerakan_benteng"
+ },
+ {
+  "input": "ratu bisa kemana saja",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "pion boleh mundur nggak",
+  "expected": "gerakan_pion"
+ },
+ {
+  "input": "raja jalan berapa kotak",
+  "expected": "gerakan_raja"
+ },
+ {
+  "input": "syarat castling apa",
+  "expected": "aturan_rokade"
+ },
+ {
+  "input": "en pasant gmn",
+  "expected": "aturan_en_passant"
+ },
+ {
+  "input": "pion yang sampai baris terakhir berubah jadi apa",
+  "expected": "aturan_promosi"
+ },
+ {
+  "input": "opening terbaik buat pemula",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "langkah pertama yang bagus apa",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "berapa poin ratu",
+  "expected": "nilai_poin_bidak"
+ },
+ {
+  "input": "nilai gajah dibanding kuda",
+  "expected": "nilai_poin_bidak"
+ },
+ {
+  "input": "kuda jalannya gimana?",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "knight move gmn",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "halo, pembukaan buat pemula apa?",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "Bagaimana cara bidak kuda melangkah?",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "ratu jalannya ke mana aja sih",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "kapan kita bisa melakukan castling atau rokade?",
+  "expected": "aturan_rokade"
+ },
+ {
+  "input": "en pasant itu gmn syaratnya",
+  "expected": "aturan_en_passant"
+ },
+ {
+  "input": "prinsip langkah awal pembukaan catur bagi pemula",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "apa itu fork dan pin",
+  "expected": "taktik_dasar"
+ },
+ {
+  "input": "arti Nf3 itu apa",
+  "expected": "notasi_catur"
+ },
+ {
+  "input": "tips latihan catur tiap hari",
+  "expected": "latihan_catur"
+ },
+ {
+  "input": "kenapa aku sering kalah cepat",
+  "expected": "kesalahan_pemula"
+ },
+ {
+  "input": "makasih ya sampai nanti",
+  "expected": "pamit"
+ },
+ {
+  "input": "cara skakmat pakai raja dan benteng",
+  "expected": "teknik_endgame"
+ },
+ {
+  "input": "apa beda skak dan skakmat",
+  "expected": "skak_dan_skakmat"
+ },
+ {
+  "input": "apa itu remis",
+  "expected": "remis_stalemate"
+ },
+ {
+  "input": "bagaimana susunan papan catur",
+  "expected": "setup_papan"
+ },
+ {
+  "input": "bantuan",
+  "expected": "bantuan_panduan"
+ },
+ {
+  "input": "apakah ratu bidak paling kuat",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "apa beda skak dan skakmat saat raja terjepit?",
+  "expected": "skak_dan_skakmat"
+ },
+ {
+  "input": "resep nasi goreng",
+  "expected": "fallback"
+ },
+ {
+  "input": "cuaca hari ini gimana",
+  "expected": "fallback"
+ },
+ {
+  "input": "siapa presiden indonesia",
+  "expected": "fallback"
+ },
+ {
+  "input": "cara main sepak bola",
+  "expected": "fallback"
+ },
+ {
+  "input": "harga bitcoin hari ini",
+  "expected": "fallback"
+ },
+ {
+  "input": "bagaimana cara memasak rendang daging sapi pedas?",
+  "expected": "fallback"
+ },
+ {
+  "input": "rekomendasi laptop murah",
+  "expected": "fallback"
+ },
+ {
+  "input": "cara install python",
+  "expected": "fallback"
+ },
+ {
+  "input": "cara menang gimana",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "bidak apa",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "gimana caranya",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "jalannya gimana",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "cara belajar",
+  "expected": "klarifikasi"
+ }
+]

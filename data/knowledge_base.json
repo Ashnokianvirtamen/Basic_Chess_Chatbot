@@ -1,0 +1,452 @@
+{
+  "intents": [
+    {
+      "tag": "salam_sapa",
+      "deskripsi": "Menyapa pengguna dan memperkenalkan diri sebagai asisten cerdas catur.",
+      "patterns": [
+        "halo",
+        "hai",
+        "halo bot",
+        "selamat pagi",
+        "selamat siang",
+        "selamat malam",
+        "assalamualaikum",
+        "apa kabar",
+        "kamu siapa",
+        "siapa kamu",
+        "bot apa ini",
+        "halo chess bot",
+        "hi",
+        "hello",
+        "p",
+        "permisi",
+        "halo coach",
+        "halo kak",
+        "pagi",
+        "malam kak"
+      ],
+      "responses": [
+        "Halo! Saya **ChessMate AI**, asisten cerdas panduan dan aturan dasar catur. Ada yang ingin kamu pelajari tentang gerakan bidak, aturan khusus, atau strategi pembukaan?",
+        "Hai pencinta catur! Selamat datang di ChessMate AI. Tanyakan aturan catur, cara melangkah bidak, nilai perwira, hingga taktik pembukaan dasar."
+      ]
+    },
+    {
+      "tag": "bantuan_panduan",
+      "deskripsi": "Memberikan informasi bantuan dan topik yang dapat ditanyakan.",
+      "patterns": [
+        "bantuan",
+        "help",
+        "apa saja yang bisa kamu lakukan",
+        "topik apa yang bisa ditanyakan",
+        "menu bantuan",
+        "panduan bot",
+        "cara menggunakan bot",
+        "fitur bot",
+        "apa saja yang bisa ditanyakan",
+        "topik yang bisa ditanyakan",
+        "bisa bantu apa",
+        "topik apa aja",
+        "menu",
+        "bantu saya dong",
+        "kamu bisa jawab apa"
+      ],
+      "responses": [
+        "Saya dapat membantu menjelaskan materi dasar catur berikut:\n1. **Setup Papan & Posisi Bidak Awal**\n2. **Gerakan Bidak**: Pion, Kuda, Gajah, Benteng, Menteri, Raja\n3. **Aturan Khusus**: Rokade (Castling), En Passant, Promosi Pion\n4. **Kondisi Akhir**: Skak, Skakmat, Remis (Stalemate)\n5. **Evaluasi Material**: Nilai poin bidak\n6. **Prinsip Pembukaan Dasar (Opening Principles)**\n7. **Taktik Dasar**: Fork, Pin, Skewer\n8. **Teknik Endgame** dasar\n9. **Notasi Catur**\n10. **Kesalahan Pemula** dan **Cara Berlatih**\n\nSilakan ketik pertanyaan Anda!"
+      ]
+    },
+    {
+      "tag": "setup_papan",
+      "deskripsi": "Penjelasan susunan papan catur dan penempatan awal bidak.",
+      "patterns": [
+        "bagaimana susunan papan catur",
+        "cara mengatur papan catur",
+        "posisi awal bidak catur",
+        "setup papan catur",
+        "orientasi papan catur",
+        "letak petak putih di mana",
+        "letak raja dan menteri di awal",
+        "bagaimana menata buah catur di awal permainan",
+        "warna petak di sudut papan",
+        "sudut kanan bawah harus petak apa",
+        "posisi awal bidak",
+        "susunan awal catur",
+        "cara menyusun bidak catur",
+        "letak menteri di papan"
+      ],
+      "responses": [
+        "**Pengaturan Papan Catur Awal:**\n- Papan terdiri dari 64 petak (8x8 baris dan kolom).\n- **Aturan Sudut:** Sudut kanan bawah pemain harus berupa petak terang/putih (*white on right*).\n- **Baris 2 & 7:** Seluruhnya diisi 8 Pion (Pawn).\n- **Baris 1 & 8:** Dari sudut ke tengah: Benteng (Rook), Kuda (Knight), Gajah (Bishop).\n- **Raja & Menteri:** Menteri diletakkan pada petak yang sesuai warnanya (Menteri putih di petak putih, menteri hitam di petak hitam). Raja berada di samping menterinya."
+      ]
+    },
+    {
+      "tag": "gerakan_pion",
+      "deskripsi": "Cara melangkah dan memukul bagi bidak Pion (Pawn).",
+      "patterns": [
+        "bagaimana gerakan pion",
+        "cara jalan pion",
+        "aturan bidak pion",
+        "pion bisa jalan berapa langkah",
+        "bagaimana pion memukul",
+        "langkah bidak pawn",
+        "jalan bidak prajurit atau pion",
+        "pion jalannya gimana",
+        "pawn jalannya gmn",
+        "prajurit catur jalan gimana",
+        "pion makan gimana",
+        "pion bisa maju berapa kotak"
+      ],
+      "responses": [
+        "**Aturan Gerakan Pion (Pawn):**\n1. **Maju:** Pion hanya bisa bergerak maju ke depan, tidak boleh mundur.\n2. **Langkah Awal:** Pada langkah pertamanya, pion boleh memilih melangkah 1 atau 2 petak ke depan.\n3. **Langkah Selanjutnya:** Hanya boleh maju 1 petak ke depan.\n4. **Memukul Lawan:** Pion memukul musuh secara **diagonal 1 petak ke depan**, bukan ke arah depan lurus.\n5. Pion memiliki aturan khusus: *En Passant* dan *Promosi*."
+      ]
+    },
+    {
+      "tag": "gerakan_kuda",
+      "deskripsi": "Cara melangkah dan keistimewaan bidak Kuda (Knight).",
+      "patterns": [
+        "bagaimana gerakan kuda",
+        "cara jalan kuda",
+        "langkah bidak knight",
+        "kuda jalannya seperti apa",
+        "apakah kuda bisa melompati bidak lain",
+        "gerakan huruf l kuda",
+        "bagaimana kuda memukul",
+        "kuda jalannya gimana",
+        "knight jalannya gmn",
+        "kuda geraknya gimana",
+        "kuda bisa melompat ga",
+        "kuda jalan huruf l"
+      ],
+      "responses": [
+        "**Aturan Gerakan Kuda (Knight):**\n1. **Pola Langkah Huruf 'L':** Bergerak 2 petak lurus (vertikal atau horizontal) lalu 1 petak tegak lurus ke samping.\n2. **Keistimewaan Melompat:** Kuda adalah satu-satunya bidak dalam catur yang dapat melompati bidak kawan maupun lawan yang menghalangi jalurnya.\n3. **Memukul:** Kuda memukul bidak lawan yang berada tepat di petak pendaratan akhirnya."
+      ]
+    },
+    {
+      "tag": "gerakan_gajah",
+      "deskripsi": "Cara melangkah dan memukul bagi bidak Gajah / Luncur (Bishop).",
+      "patterns": [
+        "bagaimana gerakan gajah",
+        "cara jalan gajah",
+        "aturan bidak bishop",
+        "langkah gajah atau peluncur",
+        "gajah jalannya ke mana",
+        "apakah gajah bisa pindah warna petak",
+        "gajah jalannya gimana",
+        "bishop jalannya gmn",
+        "gajah geraknya gimana",
+        "gajah jalan miring ya"
+      ],
+      "responses": [
+        "**Aturan Gerakan Gajah / Bishop:**\n1. Bergerak ke arah **diagonal** (miring) sejauh petak kosong yang tersedia.\n2. Tidak dapat melompati bidak lain.\n3. **Warna Petak Tetap:** Setiap pemain memiliki satu Gajah petak terang dan satu Gajah petak gelap, dan mereka selamanya akan tetap di warna petak awalnya."
+      ]
+    },
+    {
+      "tag": "gerakan_benteng",
+      "deskripsi": "Cara melangkah dan memukul bagi bidak Benteng (Rook).",
+      "patterns": [
+        "bagaimana gerakan benteng",
+        "cara jalan benteng",
+        "aturan bidak rook",
+        "benteng melangkah ke mana",
+        "langkah lurus benteng",
+        "apakah benteng bisa melompat",
+        "benteng jalannya gimana",
+        "rook jalannya gmn",
+        "benteng geraknya gimana",
+        "benteng bisa jalan serong"
+      ],
+      "responses": [
+        "**Aturan Gerakan Benteng (Rook):**\n1. Bergerak lurus secara **horizontal (baris)** atau **vertikal (kolom)** sejauh petak kosong yang diinginkan.\n2. Tidak dapat melompati bidak lain.\n3. Benteng merupakan perwira berat (*major piece*) yang sangat kuat di fase akhir dan terlibat dalam manuver khusus *Rokade* bersama Raja."
+      ]
+    },
+    {
+      "tag": "gerakan_menteri",
+      "deskripsi": "Cara melangkah dan memukul bagi bidak Menteri / Ratu (Queen).",
+      "patterns": [
+        "bagaimana gerakan menteri",
+        "cara jalan ratu",
+        "aturan bidak queen",
+        "langkah permaisuri atau menteri catur",
+        "apakah ratu bidak paling kuat",
+        "menteri bisa jalan ke mana saja",
+        "menteri jalannya gimana",
+        "queen jalannya gmn",
+        "ratu geraknya gimana",
+        "ratu jalan ke mana"
+      ],
+      "responses": [
+        "**Aturan Gerakan Menteri / Queen:**\n1. Menteri adalah bidak paling fleksibel dan kuat di papan catur.\n2. Dapat bergerak lurus secara **horizontal, vertikal, maupun diagonal** sejauh petak kosong tanpa batas.\n3. Merupakan gabungan kekuatan Benteng dan Gajah, namun tetap tidak dapat melompati bidak yang menghalanginya."
+      ]
+    },
+    {
+      "tag": "gerakan_raja",
+      "deskripsi": "Cara melangkah dan peran krusial bidak Raja (King).",
+      "patterns": [
+        "bagaimana gerakan raja",
+        "cara jalan king",
+        "aturan bidak raja",
+        "raja bisa melangkah ke mana",
+        "berapa petak raja bisa melangkah",
+        "apakah raja boleh melangkah ke petak yang diserang",
+        "raja jalannya gimana",
+        "king jalannya gmn",
+        "raja boleh jalan berapa kotak",
+        "raja geraknya gimana"
+      ],
+      "responses": [
+        "**Aturan Gerakan Raja (King):**\n1. Raja dapat melangkah **1 petak ke segala arah** (horizontal, vertikal, atau diagonal).\n2. **Zona Aman:** Raja **tidak pernah boleh** melangkah ke petak yang sedang diserang oleh bidak lawan (petak terancam skak).\n3. Dua raja lawan tidak boleh berdiri berdampingan secara langsung (harus ada jeda minimal 1 petak).\n4. Raja adalah bidak paling berharga: jika Raja terkena skakmat, permainan berakhir kalah."
+      ]
+    },
+    {
+      "tag": "aturan_rokade",
+      "deskripsi": "Penjelasan aturan khusus manuver Rokade (Castling).",
+      "patterns": [
+        "apa itu rokade",
+        "bagaimana cara melakukan castling",
+        "syarat rokade catur",
+        "aturan rokade pendek dan panjang",
+        "kapan tidak boleh rokade",
+        "langkah raja dan benteng bersamaan",
+        "rokade itu apa",
+        "castling itu apa",
+        "cara rokade",
+        "kapan boleh rokade",
+        "syarat castling"
+      ],
+      "responses": [
+        "**Aturan Manuver Rokade (Castling):**\nManuver satu kali jalan yang melibatkan Raja dan Benteng untuk mengamankan Raja sekaligus mengaktifkan Benteng.\n- **Jenis:** Rokade Sayap Raja / Pendek (O-O) dan Rokade Sayap Menteri / Panjang (O-O-O).\n- **Syarat Sah:**\n  1. Raja dan Benteng yang bersangkutan belum pernah bergerak sama sekali.\n  2. Tidak ada bidak lain di antara Raja dan Benteng.\n  3. Raja tidak sedang dalam keadaan skak.\n  4. Petak yang dilalui atau ditempati Raja tidak sedang dikontrol/diancam oleh bidak lawan."
+      ]
+    },
+    {
+      "tag": "aturan_en_passant",
+      "deskripsi": "Penjelasan aturan khusus memukul lewat / En Passant.",
+      "patterns": [
+        "apa itu en passant",
+        "bagaimana aturan en passant",
+        "syarat pion makan sambil lewat",
+        "kapan bisa en passant",
+        "aturan memukul pion lewat",
+        "en passant itu apa",
+        "en pasant gimana",
+        "apa maksud en passant",
+        "pion makan lewat itu apa"
+      ],
+      "responses": [
+        "**Aturan Khusus En Passant (Memukul Sambil Lewat):**\nAturan khusus pemukulan oleh pion terhadap pion lawan:\n- Terjadi saat pion lawan baru saja maju 2 petak langsung dari posisi awalnya dan mendarat tepat bersebelahan secara horizontal dengan pion Anda.\n- Pada **giliran berikutnya secara langsung**, Anda berhak memukul pion tersebut seolah-olah ia hanya maju 1 petak (diagonal ke petak belakang pion lawan itu).\n- *Penting:* Hak En Passant akan **hangus** jika Anda tidak langsung melakukannya pada giliran tersebut!"
+      ]
+    },
+    {
+      "tag": "aturan_promosi",
+      "deskripsi": "Penjelasan aturan promosi pion saat mencapai petak ujung lawan.",
+      "patterns": [
+        "apa itu promosi pion",
+        "aturan promosi catur",
+        "kapan pion bisa berubah jadi menteri",
+        "pion sampai ujung jadi apa",
+        "syarat pawn promotion",
+        "apakah boleh punya dua ratu",
+        "promosi pion gimana",
+        "pion jadi ratu kapan",
+        "apa itu promosi",
+        "pion bisa naik pangkat"
+      ],
+      "responses": [
+        "**Aturan Promosi Pion (Pawn Promotion):**\n- Ketika pion berhasil melangkah hingga mencapai baris paling ujung papan lawan (baris ke-8 untuk putih, baris ke-1 untuk hitam), pion tersebut **wajib segera bermutasi** menjadi salah satu perwira pilihan pemain: **Menteri (Queen), Benteng (Rook), Gajah (Bishop), atau Kuda (Knight)**.\n- Pion tidak bisa tetap menjadi pion dan tidak bisa menjadi Raja.\n- Anda boleh memiliki lebih dari satu Menteri secara bersamaan di papan jika berhasil mempromosikan beberapa pion."
+      ]
+    },
+    {
+      "tag": "skak_dan_skakmat",
+      "deskripsi": "Perbedaan antara kondisi Skak (Check) dan Skakmat (Checkmate).",
+      "patterns": [
+        "apa beda skak dan skakmat",
+        "apa itu checkmate",
+        "apa artinya skak",
+        "kapan terjadi skakmat",
+        "bagaimana cara lepas dari skak",
+        "arti raja terkena skak",
+        "beda skak sama skakmat",
+        "skak itu apa",
+        "skakmat itu apa",
+        "apa itu skak",
+        "cara menghindari skak"
+      ],
+      "responses": [
+        "**Perbedaan Skak (Check) dan Skakmat (Checkmate):**\n- **Skak (Check):** Raja sedang diserang/diancam oleh bidak lawan. Pemain yang diserang **wajib** menyelamatkan rajanya pada giliran itu melalui 3 cara: (1) Menggerakkan raja ke petak aman, (2) Memblokir serangan dengan bidak lain, atau (3) Memukul bidak penyerang.\n- **Skakmat (Checkmate):** Raja sedang dalam ancaman skak dan **tidak ada satu pun langkah sah** untuk menyelamatkan raja. Permainan langsung selesai dan pemain yang diskakmat dinyatakan kalah."
+      ]
+    },
+    {
+      "tag": "remis_stalemate",
+      "deskripsi": "Kondisi permainan berakhir seri / remis, termasuk Stalemate.",
+      "patterns": [
+        "apa itu remis",
+        "kapan permainan catur berakhir seri",
+        "apa arti stalemate",
+        "apa itu jalan buntu catur",
+        "aturan remis catur",
+        "tiga kali pengulangan remis",
+        "aturan 50 langkah remis",
+        "kapan catur seri",
+        "apa itu seri",
+        "stalemate itu apa",
+        "remis itu apa",
+        "draw dalam catur"
+      ],
+      "responses": [
+        "**Kondisi Remis (Draw / Seri) dalam Catur:**\n1. **Stalemate (Patt / Jalan Buntu):** Giliran pemain melangkah, rajanya **tidak sedang diskak**, namun pemain tersebut **tidak memiliki langkah sah** yang dapat dilakukan. Hasilnya adalah remis seketika.\n2. **Kekurangan Material:** Bidak yang tersisa tidak cukup untuk menghasilkan skakmat (misal: Raja vs Raja, atau Raja + Gajah vs Raja).\n3. **Aturan 50 Langkah:** 50 langkah berturut-turut tanpa ada pergerakan pion dan tanpa ada bidak yang dipukul.\n4. **Pengulangan Tiga Kali (Threefold Repetition):** Posisi papan yang persis sama terulang 3 kali.\n5. **Kesepakatan Bersama (Mutual Agreement):** Kedua pemain sepakat berdamai."
+      ]
+    },
+    {
+      "tag": "nilai_poin_bidak",
+      "deskripsi": "Nilai poin dan evaluasi material setiap bidak catur.",
+      "patterns": [
+        "berapa nilai poin bidak catur",
+        "poin kuda berapa",
+        "poin benteng berapa",
+        "poin menteri berapa",
+        "valuasi material bidak",
+        "perbandingan kekuatan bidak catur",
+        "nilai bidak catur",
+        "ratu bernilai berapa poin",
+        "nilai poin gajah",
+        "nilai tiap bidak",
+        "bidak mana paling bernilai"
+      ],
+      "responses": [
+        "**Evaluasi Material Standar Bidak Catur:**\n- **Pion (Pawn):** 1 Poin (Unit dasar pertahanan & formasi)\n- **Kuda (Knight):** 3 Poin (Perwira ringan, lincah di posisi tertutup)\n- **Gajah (Bishop):** 3 Poin (Perwira ringan, kuat di posisi terbuka dan diagonal panjang)\n- **Benteng (Rook):** 5 Poin (Perwira berat, penguasa lajur terbuka)\n- **Menteri (Queen):** 9 Poin (Perwira terkuat, penguasa medan pertempuran)\n- **Raja (King):** Tidak ternilai (*Infinite*) karena matinya raja mengakhiri permainan, namun setara 3.5-4 poin dalam fase akhir permainan."
+      ]
+    },
+    {
+      "tag": "strategi_opening",
+      "deskripsi": "Prinsip dan taktik dasar pada fase pembukaan catur.",
+      "patterns": [
+        "bagaimana strategi pembukaan catur",
+        "tips opening catur untuk pemula",
+        "prinsip pembukaan catur",
+        "apa yang harus dilakukan di awal permainan",
+        "taktik awal bermain catur",
+        "langkah awal yang bagus di catur",
+        "opening catur buat pemula",
+        "pembukaan catur terbaik",
+        "apa itu opening",
+        "prinsip opening catur",
+        "mulai main catur pakai langkah apa"
+      ],
+      "responses": [
+        "**3 Prinsip Emas Pembukaan (Opening) Catur:**\n1. **Kuasai Petak Pusat (Center Control):** Majukan pion pusat (e4/d4 untuk putih, e5/d5 untuk hitam) untuk mengontrol 4 petak sentral (d4, d5, e4, e5).\n2. **Kembangkan Perwira (Develop Pieces):** Dahulukan menggerakkan Kuda dan Gajah sebelum menggerakkan Menteri atau Benteng. Hindari menggerakkan bidak yang sama berkali-kali di awal.\n3. **Amankan Raja (King Safety):** Lakukan **Rokade** sesegera mungkin di awal permainan agar Raja aman di pojok dan Benteng terhubung aktif ke tengah."
+      ]
+    },
+    {
+      "tag": "pamit",
+      "deskripsi": "Mengakhiri percakapan dan berterima kasih.",
+      "patterns": [
+        "terima kasih",
+        "makasih coach",
+        "makasih ya",
+        "thanks",
+        "sampai jumpa",
+        "sampai nanti",
+        "sampai ketemu",
+        "dadah",
+        "bye",
+        "sudah cukup makasih",
+        "oke makasih banyak"
+      ],
+      "responses": [
+        "Sama-sama! Semoga latihannya menyenangkan, sampai jumpa di papan catur. ♟️"
+      ]
+    },
+    {
+      "tag": "taktik_dasar",
+      "deskripsi": "Taktik dasar: fork, pin, skewer, discovered attack.",
+      "patterns": [
+        "apa itu fork",
+        "apa itu pin dalam catur",
+        "apa itu skewer",
+        "apa itu garpu catur",
+        "cara menjebak bidak lawan",
+        "taktik dasar catur apa saja",
+        "apa itu discovered attack",
+        "trik agar menang bidak",
+        "apa itu serangan ganda"
+      ],
+      "responses": [
+        "**Taktik Dasar Catur:**\n1. **Fork (Garpu):** Satu bidak menyerang dua atau lebih bidak lawan sekaligus; kuda terkenal sering melakukannya.\n2. **Pin (Tahanan):** Bidak lawan tidak bisa (atau tidak sebaiknya) bergerak karena bidak yang lebih berharga berada di belakangnya pada garis serangan yang sama.\n3. **Skewer (Tusukan):** Mirip pin, tetapi bidak berharga berada di depan dan harus menyingkir sehingga bidak di belakangnya terancam.\n4. **Discovered Attack:** Memindahkan satu bidak sehingga membuka garis serangan bidak lain di belakangnya.\n\n*Kebiasaan baik:* sebelum melangkah, periksa apakah ada bidak yang menggantung (tidak terlindungi) atau bisa diserang ganda."
+      ]
+    },
+    {
+      "tag": "teknik_endgame",
+      "deskripsi": "Prinsip endgame dan teknik skakmat dasar.",
+      "patterns": [
+        "cara skakmat pakai raja dan benteng",
+        "skakmat dengan raja dan menteri",
+        "apa itu endgame",
+        "teknik endgame dasar",
+        "kapan raja ikut menyerang",
+        "permainan akhir catur bagaimana",
+        "cara menang di akhir permainan",
+        "raja dan pion melawan raja"
+      ],
+      "responses": [
+        "**Prinsip Endgame (Akhir Permainan):**\n- **Aktifkan Raja:** Saat bidak sudah banyak berkurang, raja aman dibawa ke tengah dan ikut menyerang.\n- **Skakmat Raja + Benteng:** Gunakan benteng untuk memotong raja lawan pada satu baris/kolom, dekatkan raja sendiri, lalu dorong raja lawan ke tepi papan dan beri skak di tepi.\n- **Skakmat Raja + Menteri:** Persempit ruang raja lawan dengan menteri (jaga jarak ala langkah kuda), dekatkan raja sendiri, lalu skakmat.\n- **Pion Melaju:** Dorong pion yang bebas ke ujung papan untuk dipromosikan; raja berperan mengawal pion.\n- **Awas Stalemate:** Jangan sampai raja lawan tidak punya langkah sah padahal tidak diskak, karena hasilnya remis."
+      ]
+    },
+    {
+      "tag": "notasi_catur",
+      "deskripsi": "Cara membaca dan menulis notasi aljabar catur.",
+      "patterns": [
+        "arti notasi catur itu apa",
+        "cara baca notasi catur",
+        "apa itu notasi aljabar",
+        "e4 artinya apa",
+        "tanda x di catur artinya",
+        "cara mencatat langkah catur",
+        "huruf K Q R B N artinya apa",
+        "arti tanda plus dan tanda pagar di catur",
+        "Nf3 itu apa"
+      ],
+      "responses": [
+        "**Notasi Aljabar Catur:**\n- Kolom diberi huruf **a–h** dan baris angka **1–8**, sehingga tiap petak punya nama (misalnya e4).\n- Huruf bidak: **K** Raja, **Q** Menteri, **R** Benteng, **B** Gajah, **N** Kuda (Knight); pion tidak diberi huruf.\n- Contoh: **Nf3** = kuda pindah ke f3; **e4** = pion ke e4.\n- **x** = menangkap, **+** = skak, **#** = skakmat, **O-O** = rokade sisi raja, **O-O-O** = rokade sisi menteri."
+      ]
+    },
+    {
+      "tag": "kesalahan_pemula",
+      "deskripsi": "Kesalahan umum pemula dan cara menghindarinya.",
+      "patterns": [
+        "kenapa aku sering kalah cepat",
+        "kesalahan pemula apa saja",
+        "kok bidakku sering dimakan",
+        "kenapa selalu kalah",
+        "aku sering blunder",
+        "biar tidak gampang kalah gimana",
+        "kenapa kalah terus",
+        "kesalahan umum main catur",
+        "kenapa bidak saya gampang diambil"
+      ],
+      "responses": [
+        "**Kesalahan Umum Pemula:**\n1. **Bidak menggantung:** membiarkan bidak tanpa perlindungan sehingga mudah ditangkap.\n2. **Menteri keluar terlalu cepat:** mudah diburu dan membuang langkah.\n3. **Lupa rokade:** raja tetap di tengah dan rentan diserang.\n4. **Mengabaikan ancaman lawan:** fokus menyerang tanpa memeriksa serangan balik.\n5. **Menggerakkan bidak yang sama berulang kali** di pembukaan.\n\n*Kebiasaan yang membantu:* sebelum melangkah, tanyakan 'apa yang diancam lawan setelah langkahku?'"
+      ]
+    },
+    {
+      "tag": "latihan_catur",
+      "deskripsi": "Cara berlatih agar cepat berkembang.",
+      "patterns": [
+        "cara cepat mahir catur gimana",
+        "gimana cara latihan catur",
+        "tips biar mahir catur",
+        "latihan catur tiap hari",
+        "belajar catur dari mana",
+        "cara meningkatkan rating catur",
+        "apa itu puzzle catur",
+        "rekomendasi cara belajar catur",
+        "cara naik rating"
+      ],
+      "responses": [
+        "**Rutinitas Latihan untuk Pemula:**\n1. **Puzzle taktik** setiap hari untuk melatih mata mengenali fork, pin, dan skewer.\n2. **Main dengan durasi lebih panjang** (misalnya rapid 10 menit atau lebih) agar sempat berpikir.\n3. **Tinjau ulang partai yang kalah** untuk mencari kesalahan.\n4. **Pelajari endgame dasar** (skakmat raja + benteng, raja + pion).\n\nKonsisten sedikit tiap hari lebih efektif daripada latihan lama sekali-sekali."
+      ]
+    }
+  ],
+  "fallback": {
+    "default_responses": [
+      "Maaf, saya belum memahami pertanyaan Anda terkait catur dengan tingkat keyakinan yang cukup. Bisakah Anda mengulang dengan kalimat yang lebih spesifik mengenai bidak (Pion, Kuda, Gajah, Benteng, Menteri, Raja), aturan (Rokade, En Passant, Promosi, Skakmat), atau strategi pembukaan?",
+      "Pertanyaan Anda berada di luar basis pengetahuan catur dasar saya atau belum cukup jelas. Silakan ketik 'bantuan' untuk melihat topik aturan catur yang dapat saya jawab!"
+    ]
+  }
+}

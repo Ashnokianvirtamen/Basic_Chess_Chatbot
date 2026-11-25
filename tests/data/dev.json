@@ -1,0 +1,230 @@
+[
+ {
+  "input": "hai chessmate",
+  "expected": "salam_sapa"
+ },
+ {
+  "input": "selamat sore coach",
+  "expected": "salam_sapa"
+ },
+ {
+  "input": "apa saja yang bisa ditanyakan ke kamu",
+  "expected": "bantuan_panduan"
+ },
+ {
+  "input": "fitur apa yang kamu punya",
+  "expected": "bantuan_panduan"
+ },
+ {
+  "input": "bagaimana cara menaruh bidak di awal",
+  "expected": "setup_papan"
+ },
+ {
+  "input": "petak pojok kanan bawah warnanya apa",
+  "expected": "setup_papan"
+ },
+ {
+  "input": "pion bisa maju dua petak?",
+  "expected": "gerakan_pion"
+ },
+ {
+  "input": "gimana pion bisa makan lawan",
+  "expected": "gerakan_pion"
+ },
+ {
+  "input": "kuda itu gerakannya kayak apa",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "knight bisa lompatin bidak ga",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "gajah bisa ke petak warna lain ga",
+  "expected": "gerakan_gajah"
+ },
+ {
+  "input": "bishop geraknya bagaimana",
+  "expected": "gerakan_gajah"
+ },
+ {
+  "input": "benteng bisa jalan lurus ya",
+  "expected": "gerakan_benteng"
+ },
+ {
+  "input": "rook itu gerakannya gimana",
+  "expected": "gerakan_benteng"
+ },
+ {
+  "input": "queen bisa gerak ke mana",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "permaisuri geraknya gimana",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "raja bisa jalan ke petak diserang ga",
+  "expected": "gerakan_raja"
+ },
+ {
+  "input": "king langkahnya berapa",
+  "expected": "gerakan_raja"
+ },
+ {
+  "input": "kapan raja dan benteng boleh bertukar tempat",
+  "expected": "aturan_rokade"
+ },
+ {
+  "input": "castling pendek vs panjang",
+  "expected": "aturan_rokade"
+ },
+ {
+  "input": "pion makan sambil lewat syaratnya",
+  "expected": "aturan_en_passant"
+ },
+ {
+  "input": "en passant itu kapan hangus",
+  "expected": "aturan_en_passant"
+ },
+ {
+  "input": "pion sampai baris terakhir bisa jadi kuda ga",
+  "expected": "aturan_promosi"
+ },
+ {
+  "input": "boleh punya dua queen",
+  "expected": "aturan_promosi"
+ },
+ {
+  "input": "raja kena skak harus ngapain",
+  "expected": "skak_dan_skakmat"
+ },
+ {
+  "input": "kapan dibilang checkmate",
+  "expected": "skak_dan_skakmat"
+ },
+ {
+  "input": "kapan partai dianggap draw",
+  "expected": "remis_stalemate"
+ },
+ {
+  "input": "stalemate itu menang atau seri",
+  "expected": "remis_stalemate"
+ },
+ {
+  "input": "poin menteri dibanding benteng",
+  "expected": "nilai_poin_bidak"
+ },
+ {
+  "input": "pion nilainya berapa",
+  "expected": "nilai_poin_bidak"
+ },
+ {
+  "input": "saran opening buat yang baru main",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "langkah awal sebaiknya apa",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "fork pakai kuda itu apa",
+  "expected": "taktik_dasar"
+ },
+ {
+  "input": "pin dan skewer bedanya",
+  "expected": "taktik_dasar"
+ },
+ {
+  "input": "skakmat dengan raja dan benteng gimana",
+  "expected": "teknik_endgame"
+ },
+ {
+  "input": "raja sebaiknya aktif di endgame ga",
+  "expected": "teknik_endgame"
+ },
+ {
+  "input": "notasi Nc6 artinya apa",
+  "expected": "notasi_catur"
+ },
+ {
+  "input": "tanda + dan # di catur apa",
+  "expected": "notasi_catur"
+ },
+ {
+  "input": "kenapa bidakku sering menggantung",
+  "expected": "kesalahan_pemula"
+ },
+ {
+  "input": "kesalahan apa yang sering dilakukan pemula",
+  "expected": "kesalahan_pemula"
+ },
+ {
+  "input": "gimana cara latihan biar cepat naik rating",
+  "expected": "latihan_catur"
+ },
+ {
+  "input": "belajar puzzle tiap hari bagus ga",
+  "expected": "latihan_catur"
+ },
+ {
+  "input": "terima kasih banyak ya",
+  "expected": "pamit"
+ },
+ {
+  "input": "sampai ketemu lagi",
+  "expected": "pamit"
+ },
+ {
+  "input": "resep ayam goreng",
+  "expected": "fallback"
+ },
+ {
+  "input": "jadwal kereta ke bandung",
+  "expected": "fallback"
+ },
+ {
+  "input": "siapa pemenang piala dunia",
+  "expected": "fallback"
+ },
+ {
+  "input": "cara bikin website",
+  "expected": "fallback"
+ },
+ {
+  "input": "harga emas hari ini",
+  "expected": "fallback"
+ },
+ {
+  "input": "film bagus apa",
+  "expected": "fallback"
+ },
+ {
+  "input": "cara main basket",
+  "expected": "fallback"
+ },
+ {
+  "input": "kuda poni harganya berapa",
+  "expected": "fallback"
+ },
+ {
+  "input": "bidak apa yang paling kuat",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "jalannya gimana",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "gimana cara menang",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "aturan apa yang penting",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "gimana biar bagus",
+  "expected": "klarifikasi"
+ }
+]

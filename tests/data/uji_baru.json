@@ -1,0 +1,258 @@
+[
+ {
+  "input": "halo selamat pagi bot",
+  "expected": "salam_sapa"
+ },
+ {
+  "input": "hai bot chess",
+  "expected": "salam_sapa"
+ },
+ {
+  "input": "menu bantuan dong",
+  "expected": "bantuan_panduan"
+ },
+ {
+  "input": "bot ini bisa apa aja",
+  "expected": "bantuan_panduan"
+ },
+ {
+  "input": "gimana cara nyusun papan catur",
+  "expected": "setup_papan"
+ },
+ {
+  "input": "menteri putih taruh di petak mana",
+  "expected": "setup_papan"
+ },
+ {
+  "input": "pion jalan berapa petak",
+  "expected": "gerakan_pion"
+ },
+ {
+  "input": "pion boleh makan lurus ga",
+  "expected": "gerakan_pion"
+ },
+ {
+  "input": "gerakan kuda kayak huruf l ya",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "kuda boleh lompatin bidak ga",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "gajah jalannya miring ya",
+  "expected": "gerakan_gajah"
+ },
+ {
+  "input": "gajah bisa pindah warna ga",
+  "expected": "gerakan_gajah"
+ },
+ {
+  "input": "benteng bisa lompat ga",
+  "expected": "gerakan_benteng"
+ },
+ {
+  "input": "rook jalan lurus doang?",
+  "expected": "gerakan_benteng"
+ },
+ {
+  "input": "ratu itu bidak paling kuat ya",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "gerakan queen gmn",
+  "expected": "gerakan_menteri"
+ },
+ {
+  "input": "raja boleh jalan berapa petak",
+  "expected": "gerakan_raja"
+ },
+ {
+  "input": "king boleh masuk petak yang diserang ga",
+  "expected": "gerakan_raja"
+ },
+ {
+  "input": "apa syarat rokade",
+  "expected": "aturan_rokade"
+ },
+ {
+  "input": "kapan ga boleh castling",
+  "expected": "aturan_rokade"
+ },
+ {
+  "input": "aturan en pasant gmn",
+  "expected": "aturan_en_passant"
+ },
+ {
+  "input": "kapan boleh makan pion sambil lewat",
+  "expected": "aturan_en_passant"
+ },
+ {
+  "input": "pion sampe ujung jadi apa",
+  "expected": "aturan_promosi"
+ },
+ {
+  "input": "promosi pion ke apa aja",
+  "expected": "aturan_promosi"
+ },
+ {
+  "input": "apa bedanya skak dan skakmat",
+  "expected": "skak_dan_skakmat"
+ },
+ {
+  "input": "gimana lepas dari skak",
+  "expected": "skak_dan_skakmat"
+ },
+ {
+  "input": "kapan permainan catur dibilang seri",
+  "expected": "remis_stalemate"
+ },
+ {
+  "input": "apa itu stalemate",
+  "expected": "remis_stalemate"
+ },
+ {
+  "input": "berapa nilai poin tiap bidak",
+  "expected": "nilai_poin_bidak"
+ },
+ {
+  "input": "kuda atau gajah lebih bernilai",
+  "expected": "nilai_poin_bidak"
+ },
+ {
+  "input": "prinsip pembukaan catur buat pemula",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "mau mulai main, langkah awal yang aman apa",
+  "expected": "strategi_opening"
+ },
+ {
+  "input": "apa itu fork di catur",
+  "expected": "taktik_dasar"
+ },
+ {
+  "input": "serangan ganda pakai kuda itu apa",
+  "expected": "taktik_dasar"
+ },
+ {
+  "input": "gimana cara skakmat pakai raja dan menteri",
+  "expected": "teknik_endgame"
+ },
+ {
+  "input": "bagaimana main di akhir permainan",
+  "expected": "teknik_endgame"
+ },
+ {
+  "input": "cara baca notasi Nf3",
+  "expected": "notasi_catur"
+ },
+ {
+  "input": "Bxc6 itu artinya apa",
+  "expected": "notasi_catur"
+ },
+ {
+  "input": "kenapa aku kalah terus",
+  "expected": "kesalahan_pemula"
+ },
+ {
+  "input": "kesalahan yang sering dilakukan pemula catur",
+  "expected": "kesalahan_pemula"
+ },
+ {
+  "input": "tips cepat jago catur",
+  "expected": "latihan_catur"
+ },
+ {
+  "input": "bagaimana latihan catur yang benar",
+  "expected": "latihan_catur"
+ },
+ {
+  "input": "oke makasih coach",
+  "expected": "pamit"
+ },
+ {
+  "input": "bye bye",
+  "expected": "pamit"
+ },
+ {
+  "input": "halo, kuda jalannya gimana?",
+  "expected": "gerakan_kuda"
+ },
+ {
+  "input": "halo bot, apa itu stalemate",
+  "expected": "remis_stalemate"
+ },
+ {
+  "input": "cara membuat kue brownies",
+  "expected": "fallback"
+ },
+ {
+  "input": "siapa yang menang pemilu",
+  "expected": "fallback"
+ },
+ {
+  "input": "harga iphone terbaru",
+  "expected": "fallback"
+ },
+ {
+  "input": "tutorial excel vlookup",
+  "expected": "fallback"
+ },
+ {
+  "input": "cara main futsal",
+  "expected": "fallback"
+ },
+ {
+  "input": "resep sate ayam",
+  "expected": "fallback"
+ },
+ {
+  "input": "cuaca besok di jakarta",
+  "expected": "fallback"
+ },
+ {
+  "input": "apa itu blockchain",
+  "expected": "fallback"
+ },
+ {
+  "input": "kuda lumping itu apa",
+  "expected": "fallback"
+ },
+ {
+  "input": "bagaimana cara belajar bahasa inggris",
+  "expected": "fallback"
+ },
+ {
+  "input": "bagaimana langkahnya",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "cara menang gimana",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "bidak mana yang penting",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "aturannya apa saja",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "tips dong",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "gimana mainnya",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "apa yang harus dilakukan",
+  "expected": "klarifikasi"
+ },
+ {
+  "input": "yang paling kuat apa",
+  "expected": "klarifikasi"
+ }
+]
